@@ -19,6 +19,7 @@
 		4D4309551F362EA400FEDB17 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4309541F362EA400FEDB17 /* RoundButton.swift */; };
 		4D4309571F36303F00FEDB17 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4309561F36303F00FEDB17 /* FancyField.swift */; };
 		4D4309591F36318C00FEDB17 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4309581F36318C00FEDB17 /* FancyButton.swift */; };
+		4DCB665C1F3B6245004D577B /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCB665B1F3B6245004D577B /* FeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		4D4309541F362EA400FEDB17 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		4D4309561F36303F00FEDB17 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		4D4309581F36318C00FEDB17 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		4DCB665B1F3B6245004D577B /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		833F7C9B65D7F69D89698BAD /* Pods_MySocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBBAD922232A0B8BE2AB006 /* Pods-MySocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySocial/Pods-MySocial.debug.xcconfig"; sourceTree = "<group>"; };
 		D9B7FE751D397EA6B7E4AF9B /* Pods-MySocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySocial/Pods-MySocial.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				4D43093A1F36121000FEDB17 /* SignInVC.swift */,
+				4DCB665B1F3B6245004D577B /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -251,6 +255,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +292,7 @@
 				4D43093B1F36121000FEDB17 /* SignInVC.swift in Sources */,
 				4D4309551F362EA400FEDB17 /* RoundButton.swift in Sources */,
 				4D4309591F36318C00FEDB17 /* FancyButton.swift in Sources */,
+				4DCB665C1F3B6245004D577B /* FeedVC.swift in Sources */,
 				4D4309391F36121000FEDB17 /* AppDelegate.swift in Sources */,
 				4D4309501F362B6500FEDB17 /* FancyView.swift in Sources */,
 				4D4309531F362C0800FEDB17 /* Constants.swift in Sources */,

@@ -12,6 +12,6 @@ target 'MySocial' do
   pod 'Firebase/Storage'
   pod 'FacebookCore'
   pod 'FacebookLogin'
- 
+  pod 'SwiftKeychainWrapper'
   
 end
