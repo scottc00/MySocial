@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D7EEDB8BC4E0D2929910969 /* Pods_MySocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833F7C9B65D7F69D89698BAD /* Pods_MySocial.framework */; };
+		4D0BEC0C1F41DC4A00852356 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0BEC0B1F41DC4A00852356 /* Post.swift */; };
 		4D4309391F36121000FEDB17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4309381F36121000FEDB17 /* AppDelegate.swift */; };
 		4D43093B1F36121000FEDB17 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D43093A1F36121000FEDB17 /* SignInVC.swift */; };
 		4D43093E1F36121100FEDB17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D43093C1F36121000FEDB17 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D0BEC0B1F41DC4A00852356 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		4D4309351F36121000FEDB17 /* MySocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D4309381F36121000FEDB17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D43093A1F36121000FEDB17 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		4D43094C1F36155B00FEDB17 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4D0BEC0B1F41DC4A00852356 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DCB665E1F3CB827004D577B /* CircleView.swift in Sources */,
+				4D0BEC0C1F41DC4A00852356 /* Post.swift in Sources */,
 				4D4309571F36303F00FEDB17 /* FancyField.swift in Sources */,
 				4D43093B1F36121000FEDB17 /* SignInVC.swift in Sources */,
 				4D4309551F362EA400FEDB17 /* RoundButton.swift in Sources */,
