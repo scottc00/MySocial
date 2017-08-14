@@ -22,8 +22,20 @@ class SignInVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Looks for single or multiple taps.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SignInVC.dismissKeyboard))
         
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+        //tap.cancelsTouchesInView = false
         
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    //Calls this function when the tap is recognized.
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -70,8 +82,17 @@ class SignInVC: UIViewController {
     
     @IBAction func signInTapped(_ sender: Any) {
         
+        if emailField.text == "" {
+              emailField.attributedPlaceholder = NSAttributedString(string: "Email address", attributes: [NSForegroundColorAttributeName: UIColor.red])
+            
+            if pwdField.text == "" {
+                pwdField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSForegroundColorAttributeName: UIColor.red])
+            } }else {
+        
         if let email = emailField.text, let pwd = pwdField.text {
-            Auth.auth().signIn(withEmail: email, password: pwd, completion: { (user, error) in
+           Auth.auth().signIn(withEmail: email, password: pwd, completion: { (user, error) in
+              
+                
                 if error == nil {
                     print("SCOTT: Email User authenticated with Firebase")
                     if let user = user {
@@ -95,6 +116,7 @@ class SignInVC: UIViewController {
             })
         }
         
+        }
     }
     
     func completeSignIn(id: String, userData: Dictionary<String, String>) {
