@@ -50,6 +50,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
             }
             
             self.tableView.reloadData()
+            self.posts.reverse()
         })
         
     }
@@ -124,9 +125,29 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                 } else {
                     print("SCOTT: Successfully uploaded image to Firebase storage")
                     let downloadURL = metadata?.downloadURL()?.absoluteString
+                    if let url = downloadURL {
+                       self.postToFirebase(imgUrl: url)
+                    }
+                    
                 }
             }
         }
+    }
+    
+    func postToFirebase(imgUrl: String) {
+        let post: Dictionary<String, AnyObject> = [
+            "caption": captionField.text! as AnyObject,
+            "imageUrl": imgUrl as AnyObject,
+            "likes": 0 as AnyObject
+        ]
+        
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        firebasePost.setValue(post)
+        
+        captionField.text = ""
+        imageSelected = false
+        imageAdd.image = UIImage(named: "add-image")
+        
     }
     
     @IBAction func signOutTapped(_ sender: Any) {
